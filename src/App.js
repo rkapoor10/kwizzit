@@ -1,5 +1,5 @@
 import './App.css';
-import {Navbar, Footer, Banner} from "./components"
+import {Navbar, Footer, Banner, RulesBanner} from "./components"
 import { useTheme } from './context/ThemeContext';
 
 
@@ -8,7 +8,8 @@ function App() {
   return (
     <div className={`App ${theme}-theme`}>
       <Navbar/>
-      <Banner/>
+      {/* <Banner/> */}
+      <RulesBanner/>
       <Footer/>
     </div>
   );
