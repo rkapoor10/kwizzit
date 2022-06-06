@@ -14,10 +14,10 @@ export const Navbar = () => {
         kwizz<span className="darkyellow-color">it!</span>
       </h2>
       <ul className={styles.icons}>
-        <li>
+        <li title="leaderboard">
           <MdLeaderboard className={styles.icon} />
         </li>
-        <li>
+        <li title="theme">
           {isToggle ? (
             <MdDarkMode
               className={styles.icon}
@@ -36,7 +36,7 @@ export const Navbar = () => {
             />
           )}
         </li>
-        <li>
+        <li title="login">
           <AiOutlineLogin className={styles.icon} />
         </li>
       </ul>
