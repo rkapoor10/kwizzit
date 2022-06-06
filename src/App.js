@@ -1,5 +1,5 @@
 import './App.css';
-import {Navbar, Footer} from "./components"
+import {Navbar, Footer, Banner} from "./components"
 import { useTheme } from './context/ThemeContext';
 
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className={`App ${theme}-theme`}>
       <Navbar/>
-      <h1>This is kwizzIt</h1>
+      <Banner/>
       <Footer/>
     </div>
   );
