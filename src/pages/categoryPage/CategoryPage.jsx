@@ -1,3 +1,4 @@
+import { CategoryCard } from "../../components";
 import styles from "./CategoryPage.module.css"
 
 export const CategoryPage = () => {
@@ -40,15 +41,7 @@ export const CategoryPage = () => {
         {categories.map((category) => {
           const {title, image, questionCount} = category
           return (
-            <div className={`card-container ${styles.category}`} key={category}>
-              <a href="/rules/rules.html">
-                <img src={image} alt="quiz-image" />
-              </a>
-              <div>
-                <h4 className="darkyellow">{title}</h4>
-                <p className="txt-xs gray">questions - {questionCount}</p>
-              </div>
-            </div>
+            <CategoryCard title={title} image={image} questionCount={questionCount}/>
           );
         })}
       </div>
