@@ -1,0 +1,17 @@
+.logo {
+  height: 14vh;
+  width: 14vw;
+}
+.categoryLayout{
+  padding: 1rem;
+  gap: 0.5rem;
+}
+.category{
+  border-color: var(--bg-color-dark);
+  background-color: var(--bg-color-dark);
+  box-shadow: var(--bg-color-dark)
+}
+.category:hover{
+  border-color: var(--darkyellow-color);
+  box-shadow: var(--bg-color-dark)
+}

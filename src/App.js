@@ -1,6 +1,7 @@
 import './App.css';
 import {Navbar, Footer, Banner, RulesBanner} from "./components"
 import { useTheme } from './context/ThemeContext';
+import { CategoryPage } from './pages/categoryPage/CategoryPage';
 
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <div className={`App ${theme}-theme`}>
       <Navbar/>
       {/* <Banner/> */}
-      <RulesBanner/>
+      {/* <RulesBanner/> */}
+      <CategoryPage/>
       <Footer/>
     </div>
   );
