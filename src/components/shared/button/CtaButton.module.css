@@ -1,0 +1,26 @@
+.cta {
+  background-image: linear-gradient(
+    to right,
+    #ff8008 0%,
+    #ffc837 51%,
+    #ff8008 100%
+  );
+}
+.cta {
+  margin: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--white-color);
+  box-shadow: 0 0 20px var(--background-color);
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+.cta:hover {
+  background-position: right center;
+  color: var(--white-color);
+  text-decoration: none;
+}
