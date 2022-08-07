@@ -1,7 +1,8 @@
 import './App.css';
 import {Navbar, Footer, Banner, RulesBanner} from "./components"
 import { useTheme } from './context/ThemeContext';
-import { CategoryPage } from './pages/categoryPage/CategoryPage';
+import { CategoryPage, QuestionPage, Scorecard } from './pages';
+
 
 
 function App() {
@@ -11,7 +12,9 @@ function App() {
       <Navbar/>
       {/* <Banner/> */}
       {/* <RulesBanner/> */}
-      <CategoryPage/>
+      {/* <CategoryPage/> */}
+      {/* <QuestionPage/> */}
+      <Scorecard/>
       <Footer/>
     </div>
   );

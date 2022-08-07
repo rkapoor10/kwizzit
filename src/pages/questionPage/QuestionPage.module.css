@@ -1,0 +1,44 @@
+.container{
+    border: 2px solid var(--bg-color-dark);
+    background-color: var(--bg-color-dark);
+    width: 80%;
+    border-radius: 1rem;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin: 0.5rem;
+}
+
+.status{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.options{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.option{
+    border: 2px solid var(--darkyellow-color);
+    border-radius: 3rem;
+    background-color: var(--darkbackground-color);
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.option:hover{
+    background-color: var(--bg-color-light);
+}
+
+.quitBtn{
+    background-color: var(--darkbackground-color);
+    color: var(--txt-color);
+}
+
+.quitBtn:hover{
+    border-color: var(--darkyellow-color);
+}

@@ -1,4 +1,5 @@
 import { CategoryCard } from "../../components";
+import { Logo } from "../../components/logo/Logo";
 import styles from "./CategoryPage.module.css"
 
 export const CategoryPage = () => {
@@ -6,7 +7,7 @@ export const CategoryPage = () => {
     {
       title: "Naruto Shippuden",
       image:
-        "https://cdn.anime-planet.com/anime/primary/naruto-shippuden-1.jpg?t=1625766494",
+        "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8b20ec10-f577-44b1-a687-a9fc2564d52f/dab0b2w-9238451c-4b87-4b9f-99d7-9e2b0cb30da2.jpg/v1/fill/w_1024,h_1586,q_75,strp/poster_naruto_shippuden_by_mardarkangel1992mgp_dab0b2w-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTU4NiIsInBhdGgiOiJcL2ZcLzhiMjBlYzEwLWY1NzctNDRiMS1hNjg3LWE5ZmMyNTY0ZDUyZlwvZGFiMGIydy05MjM4NDUxYy00Yjg3LTRiOWYtOTlkNy05ZTJiMGNiMzBkYTIuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.OBLk3ah6bwHa0vnBQoZ5uXe6zfCASziEPtNz8qyo28M",
       questionCount: 5,
     },
     {
@@ -30,12 +31,7 @@ export const CategoryPage = () => {
   ];
   return (
     <div className={`flex-column-center ${styles.categoryLayout}`}>
-      <a className="flex-column-center margin-bottom-4" href="/index.html">
-        <img className={styles.logo} src="/assets/bulb.svg" alt="logo" />
-        <h1>
-          kwizz<span className="darkyellow">it!</span>
-        </h1>
-      </a>
+      <Logo/>
       <p className="txt-m">Choose your favourite Anime to begin with</p>
       <div className="grid-column-layout margin-top-2 center w-80">
         {categories.map((category) => {
